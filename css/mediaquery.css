@@ -1,0 +1,833 @@
+@media (max-width: 1281px){
+    .container{
+        max-width: 1039px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .header__top{
+        padding: 24px 0 16px;
+    }
+    .logo{
+        margin-right: 19px;
+    }
+    .logo__img{
+        width: 127px;
+        height: 102px;
+    }
+    .phone__box{
+        margin-right: 319px;
+    }
+    .order__btn{
+        margin-right: 16px;
+    }
+    #header__menu-1{
+        display: none;
+    }
+    #header__menu-2{
+        display: block;
+    }
+    .menu__list{
+        justify-content: space-between;
+        margin-right: 0;
+    }
+    .header__bottom{
+        padding: 42px 0 96px;
+    }
+    .header__wrapper{
+        display: flex;
+        overflow: hidden;
+    }
+    .header__title{
+        margin: 56px 0 0 160px;
+    }
+    .header__slider{
+        max-width: 613px;
+    }
+    .header__img{
+        width: 662px;
+        height: 431px;
+        object-fit: cover;
+        object-position: 800%;
+    }
+    .advantages{
+        padding: 88px 0 40px;
+        background-image: url(../images/advantages__img-1280.png);
+        background-position: bottom left;
+    }
+    .advantages__content{
+        max-width: 613px;
+    }
+    .advantages__title{
+        margin-bottom: 56px;
+    }
+    .advantages__text{
+        margin-left: 0;
+        width: 613px;
+    }
+    .advantages__box{
+        margin-left: 0;
+    }
+    .benefits{
+        padding: 390px 0 189px;
+    }
+    .benefits__item-1{
+        top: -339px;
+        right: 579px
+    }
+    .benefits__item-2{
+        top: -200px;
+        right: 382px;
+    }
+    .benefits__item-3{
+        top: -310px;
+        right: 175px;
+    }
+    .benefits__item-4{
+        top: -150px;
+        right: 0px;
+    }
+    .service::before{
+        right: -545px;
+    }
+    .service__content::before{
+        right: -480px;
+    }
+    .contacts::after{
+        right: -159px;
+    }
+    .contacts{
+        padding: 136px 0 96px;
+    }
+    .contacts::before{
+        top: 326px;
+        left: -399px
+    }
+    .contacts__location-items{
+        height: 463px;
+    }
+    .contacts__location-item{
+        width: 507px;
+        margin-bottom: 24px;
+    }
+    .contacts__location-content{
+        width: 332px;
+    }
+    .contacts__map{
+        width: 491px;
+        height: 463px;
+    }
+    .booking__form{
+        width: 1087px;
+    }
+    .booking__input{
+        width: 498px;
+        height: 44px;
+    }
+    .booking__area{
+        width: 498px;
+        height: 180px;
+    }
+    .footer__logo{
+        margin-right: 104px;
+    }
+    .footer__services{
+        margin-right: 70px;
+    }
+    .footer__pages{
+        margin-right: 122px;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: 764px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+    .header__top{
+        padding: 24px 0 53px;
+    }
+    .menu__btn{
+        display: inline-block;
+        width: 56px;
+        height: 56px;
+        background-color: #004293;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        z-index: 50;
+        margin-right: 38px;
+    }
+    .logo{
+        margin-right: 131px;
+        z-index: 50;
+    }
+    .phone__box{
+        display: none;
+    }
+    #header__menu-1{
+        display: block;
+    }
+    #header__menu-2{
+        display: none;
+    }
+    .menu__list{
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-100%);
+        z-index: 30;
+    }
+    .menu__devider{
+        display: none;
+    }
+    .menu-open .menu__list{
+        transform: translateY(0);
+    }
+    .order__btn,
+    .basket__img{
+        z-index: 50;
+    }
+    .header__bottom{
+        padding: 5px 0 48px;
+    }
+    .header__title{
+        font-size: 32px;
+        margin: 56px 0 0 128px;
+    }
+    .header__slider{
+        width: 488px;
+        padding-left: 128px;
+        margin-bottom: 32px;
+        padding-top: 32px;
+    }
+    .header__slider-item{
+        font-size: 14px;
+    }
+    .header__img{
+        width: 534px;
+        height: 348px;
+        object-fit: cover;
+        object-position: 800%;
+    }
+    .header__bottom:before{
+        bottom: -47px;
+    }
+    .advantages{
+        padding: 72px 0 64px;
+        background-image: none;
+    }
+    .advantages__content{
+        width: 487px;
+        margin: 0 auto;
+    }
+    .advantages__title{
+        margin-bottom: 32px;
+        font-size: 28px;
+    }
+    .advantages__text{
+        margin-bottom: 32px;
+        width: 487px;
+        font-size: 14px;
+    }
+    .advantages__box-text{
+        font-size: 14px;
+        width: 368px;
+    }
+    .advantages__btn{
+        margin-top: 32px;
+    }
+    .benefits{
+        padding: 78px 0 276px;
+    }
+    .benefits__title{
+        width: 515px;
+        font-size: 32px;
+        margin: 0 auto;
+    }
+    .benefits__title::after{
+        content: '';
+        position: absolute;
+        width: 430px;
+        height: 430px;
+        border-radius: 50%;
+        background: var(--rgba-0661471, #004293);
+        top: -77px;
+        right: 428px;
+    }
+    .benefits__title--professionalnoe::before{
+        content: attr(data-content);
+        position: absolute;
+        top: -14px;
+        left: 0px;
+        width: 61px;
+        overflow: hidden;
+        color: #FFF;
+        z-index: 1;
+    }
+    .benefits__title--obsluzhivanie::before {
+        content: attr(data-content);
+        position: absolute;
+        top: 50px;
+        left: -309px;
+        width: 85px;
+        overflow: hidden;
+        color: #FFF;
+        z-index: 1;
+    }
+    .benefits__item-1,
+    .benefits__item-2,
+    .benefits__item-3,
+    .benefits__item-4{
+        width: 140px;
+        height: 140px;
+    }
+    .benefits__item-1,
+    .benefits__item-2{
+        padding: 24px 0px;
+    }
+    .benefits__item-3,
+    .benefits__item-4{
+        padding: 22.5px 0px 43.5px 0px;
+    }
+    .benefits__item-1{
+        top: 163px;
+        right: 565px;
+        z-index: 1;
+    }
+    .benefits__item-2{
+        top: 163px;
+        right: 381px;
+    }
+    .benefits__item-3{
+        top: 163px;
+        right: 195px;
+    }
+    .benefits__item-4{
+        top: 163px;
+        right: 0px;
+    }
+    .benefits__item-text{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .service{
+        padding: 56px 0 275px;
+    }
+    .service::before{
+        content: '';
+        width: 585px;
+        height: 279px;
+        background-image: url(../images/service__car-768.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 368px;
+        right: 110px;
+        z-index: 3;
+    }
+    .service__content::before{
+        content: '';
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: rgba(0, 66, 147, 1);
+        position: absolute;
+        top: 426px;
+        right: 235px;
+        z-index: 2;
+    }
+    .service__content{
+        width: 488px;
+        margin: 0 auto;
+    }
+    .service__title{
+        margin-bottom: 40px;
+    }
+    .service__text{
+        margin-left: 0;
+    }
+    .service__text + .service__text{
+        margin-bottom: 40px;
+    }
+    .contacts::before{
+        content: '';
+        width: 281px;
+        height: 281px;
+        border-radius: 489px;
+        opacity: 0.1;
+        background: var(--rgba-0661471, #004293);
+        position: absolute;
+        top: -75px;
+        left: -200px;
+    }
+    .contacts{
+        padding: 44px 0 80px;
+    }
+    .contacts::after{
+        content: '';
+        background-color: #004293;
+        opacity: 0.1;
+        display: block;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: -220px;
+        right: 235px;
+        border-radius: 50%;
+    }
+    .contacts__title-box{
+        margin-bottom: 80px;
+    }
+    .contacts__title-text{
+        width: 488px;
+    }
+    .contacts__box{
+        display: block;
+    }
+    .contacts__map{
+        display: none;
+    }
+    .booking{
+        padding: 50px 0 88px;
+    }
+    .booking__form{
+        width: 744px;
+    }
+    .booking__input{
+        width: 327px;
+        height: 44px;
+    }
+    .booking__area{
+        width: 327px;
+        height: 180px;
+    }
+    .booking__text{
+        text-align: center;
+    }
+    .footer__top{
+        padding: 24px 0 32px;
+        gap: 56px 96px;
+        flex-wrap: wrap;
+    }
+    .footer__logo,
+    .footer__services,
+    .footer__pages{
+        margin-right: 0;
+    }
+    .footer__logo .logo__img{
+        width: 160px;
+        height: 129px;
+    }
+    .footer__services{
+        order: 1;
+    }
+    .footer__pages-list{
+        width: 160px;
+    }
+    .footer__order{
+        margin: 0 auto;
+        order: 2;
+        text-align: center;
+    }
+}
+@media (max-width: 414px){
+    .container{
+        max-width: 296px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .header__top{
+        padding: 16px 0 8px;
+    }
+    .menu__btn{
+        width: 40px;
+        height: 40px;
+        margin-right: 70px;
+    }
+    .menu__btn-img{
+        width: 26.667px;
+        height: 26.667px;
+    }
+    .logo{
+        margin-right: 58px;
+    }
+    .logo__img{
+        width: 76px;
+        height: 61px;
+    }
+    #order__btn-1{
+        display: none;
+    }
+    .basket__img{
+        width: 40px;
+        height: 40px;
+    }
+    #order__btn-2{
+        display: flex;
+        gap: 60px;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .order-btn__text{
+        font-size: 18px;
+        line-height: 24px
+    }
+    .order-btn__text + .order-btn__text{
+        font-size: 12px;
+        line-height: 14px
+    }
+    .header__btn-img{
+        width: 40px;
+        height: 40px;
+    }
+    .header__bottom{
+        padding: 8px 0 24px;
+    }
+    .header__bottom:before{
+        display: none;
+    }
+    .header__wrapper{
+        display: block;
+        overflow: visible;
+    }
+    .header__title{
+        font-size: 24px;
+        padding: 52px 0 0 24px;
+        margin: 0;
+    }
+    .header__slider{
+        width: 264px;
+        height: 261px;
+        padding-left: 32px;
+        padding-top: 24px;
+        margin-bottom: 0;
+    }
+    .slick-prev{
+        transform: rotate(-90deg);
+        top: 105px;
+        left: -11px;
+    }
+    .slick-next{
+        transform: rotate(-90deg);
+        bottom: 120px;
+        left: 270px;
+    }
+    .slick-dots,
+    .slick-dots li{
+        display: none;
+    }
+    .courier-btn{
+        margin: 24px;
+        gap: 47px;
+    }
+    .header__img-box{
+        display: none;
+    }
+    .advantages{
+        padding: 32px 0 34px;
+    }
+    .advantages__content{
+        width: 100%;
+    }
+    .advantages__mini-text{
+        text-align: center;
+    }
+    .advantages__title{
+        text-align: center;
+        font-size: 24px;
+    }
+    .advantages__text{
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .advantages__btn{
+        margin-top: 24px;
+        width: 100%;
+        gap: 124px;
+    }
+    .benefits{
+        padding: 40px 0 336px;
+        overflow: hidden;
+    }
+    .benefits__title{
+        font-size: 24px;
+        text-align: center;
+        width: 100%;
+        line-height: 28px;
+    }
+    .benefits__title::after{
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: var(--rgba-0661471, #004293);
+        top: -67px;
+        left: -149px;
+    }
+    .benefits__title--professionalnoe::before{
+        content: attr(data-content);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 17px;
+        overflow: hidden;
+        color: #FFF;
+        z-index: 1;
+    }
+    .benefits__title--obsluzhivanie::before {
+        content: attr(data-content);
+        position: absolute;
+        top: 28px;
+        left: -252px;
+        width: 38px;
+        overflow: hidden;
+        color: #FFF;
+        z-index: 1;
+    }
+    .benefits__item-1,
+    .benefits__item-2,
+    .benefits__item-3,
+    .benefits__item-4{
+        width: 120px;
+        height: 120px;
+    }
+    .benefits__item-1,
+    .benefits__item-2{
+        padding: 24px 0px;
+    }
+    .benefits__item-3,
+    .benefits__item-4{
+        padding: 24px 0px 40px;
+    }
+    .benefits__item-1{
+        top: 112px;
+        right: 167px;
+    }
+    .benefits__item-2{
+        top: 112px;
+        right: 15px;
+    }
+    .benefits__item-3{
+        top: 262px;
+        right: 167px;
+    }
+    .benefits__item-4{
+        top: 262px;
+        right: 15px;
+    }
+    .benefits__item-text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .service{
+        padding: 32px 0 163px;
+    }
+    .service::before{
+        content: '';
+        width: 342px;
+        height: 163px;
+        background-image: url(../images/service__car-320.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 426px;
+        right: -20px;
+        z-index: 3;
+    }
+    .service__content::before{
+        content: '';
+        width: 187px;
+        height: 187px;
+        border-radius: 50%;
+        background: rgba(0, 66, 147, 1);
+        position: absolute;
+        top: 463px;
+        right: 66px;
+        z-index: 2;
+    }
+    .service__content{
+        width: 100%;
+    }
+    .service__title{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .service__text{
+        font-size: 14px;
+    }
+    .service__text + .service__text{
+        margin-bottom: 24px;
+    }
+    .service__container{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+    .service__btn{
+        margin-bottom: 24px;
+        width: 100%;
+        background-color: #004293;
+        gap: 101px;
+    }
+    .service__btn-text{
+        color: #fff;
+    }
+    #service__btn-img-1{
+        display: none;
+    }
+    #service__btn-img-2{
+        display: inline;
+    }
+    .service__btn-img-2{
+        border-radius: 9999px;
+        background: #FFF;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+        width: 32px;
+        height: 32px;
+        padding: 5.333px;
+    }
+    .contacts::before{
+        display: none;
+    }
+    .contacts{
+        padding: 26px 0 32px;
+    }
+    .contacts::after{
+        content: '';
+        width: 187px;
+        height: 187px;
+        top: -131px;
+        right: 66px;
+    }
+    .contacts__title-box{
+        margin-bottom: 32px;
+        gap: 16px;
+    }
+    .contacts__title{
+        font-size: 24px;
+    }
+    .contacts__title-text{
+        width: 100%;
+        font-size: 14px;
+    }
+    .contacts__location-items{
+        height: 820px;
+        overflow-y: hidden;
+        margin-bottom: 24px;
+    }
+    .contacts__location-item{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #004293;
+    }
+    .contacts__location-title{
+        width: 100%;
+        border-right: none;
+        padding: 0;
+    }
+    .contacts__location-content{
+        padding-left: 0;
+        width: 100%;
+    }
+    .contacts__text,
+    .contacts__number{
+        margin-bottom: 8px;
+    }
+    .contacts__btn{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        cursor: pointer;
+    }
+    .contacts__btn-link{
+        color: #004293;
+    }
+    .booking{
+        padding: 24px 0 63px;
+    }
+    .booking__form{
+        width: 100%;
+        padding: 32px 16px;
+        gap: 24px;
+    }
+    .booking__title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .booking__box{
+        flex-direction: column;
+        gap: 24px;
+    }
+    .booking__input{
+        width: 264px;
+    }
+    .booking__area{
+        width: 264px;
+    }
+    .label__box{
+        gap: 84px;
+    }
+    .booking__btn{
+        gap: 114px;
+    }
+    .footer__top{
+        padding: 24px 0;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+    .footer__logo{
+        margin-right: 0;
+    }
+    #footer__services-1{
+        display: none;
+    }
+    #footer__services-2{
+        display: block;
+        order: 0;
+    }
+    .dropdown{
+        gap: 8px;
+        justify-content: center;
+        position: relative;
+    }
+    .footer__services-title{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .dropdown__content{
+        margin-top: 10px;
+        display: none;
+        position: absolute;
+        text-align: left;
+        left: 139px;
+    }
+    .show{
+        display: block;
+    }
+    .footer__services-link{
+        font-size: 14px;
+    }
+    .footer__pages_mt106{
+        margin-top: 106px;
+    }
+    .footer__top .order__btn{
+        gap: 80px;
+    }
+    .footer__bottom-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 24px;
+    }
+}

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сана</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <button class="menu__btn" type="button">
+                    <img src="images/menu__btn-img.svg" alt="" class="menu__btn-img">
+                </button>
+                <a href="#" class="logo">
+                    <img src="images/logo.svg" alt="logo" class="logo__img">
+                </a>
+                <div class="phone__box">
+                    <div class="phone__box-top">
+                        <img src="images/phone.png" alt="phone" class="phone__img">
+                        <a href="tel:+78001234567" class="phone">8 (800) 123-45-67</a>
+                    </div>
+                    <p class="phone__text">с 8:00 - 20:00</p>
+                </div> 
+                <nav class="header__menu" id="header__menu-1">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <div class="dropdown">
+                                <button class="dropdown__btn menu__item">Услуги</button>
+                                <img src="images/list__img.svg" alt="arrow" class="dropdown__img">
+                            </div>
+                            <!-- <div id="myDropdown" class="dropdown__content">
+
+                                <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-1" checked>
+                                <label class="dropdown__content-label" for="dropdown__content-btn-1">
+                                    Одежда
+                                    <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                                </label>
+
+                                <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-2">
+                                <label class="dropdown__content-label" for="dropdown__content-btn-2">
+                                    Аксессуары
+                                    <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                                </label>
+
+                                <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-3">
+                                <label class="dropdown__content-label" for="dropdown__content-btn-3">
+                                    Домашний интерьер
+                                    <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                                </label>
+
+                                <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-4">
+                                <label class="dropdown__content-label" for="dropdown__content-btn-4">
+                                    Обувь
+                                    <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                                </label>
+
+                                <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-5">
+                                <label class="dropdown__content-label" for="dropdown__content-btn-5">
+                                    Особые услуги
+                                    <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                                </label>
+
+                                <div class="dropdown__content-box" id="content-1">
+                                    <ul class="dropdown__content-list">
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Деловая</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Повседневная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Торжественная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Верхняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Детская</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Домашняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Спортивная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Форменная</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__content-box" id="content-2">
+                                    <ul class="dropdown__content-list">
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Деловая</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Повседневная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Торжественная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Верхняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Детская</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Домашняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Спортивная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Форменная</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__content-box" id="content-3">
+                                    <ul class="dropdown__content-list">
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Деловая</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Повседневная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Торжественная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Верхняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Детская</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Домашняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Спортивная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Форменная</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__content-box" id="content-4">
+                                    <ul class="dropdown__content-list">
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Деловая</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Повседневная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Торжественная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Верхняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Детская</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Домашняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Спортивная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Форменная</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__content-box" id="content-5">
+                                    <ul class="dropdown__content-list">
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Деловая</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Повседневная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Торжественная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Верхняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Детская</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Домашняя</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Спортивная</a>
+                                        </li>
+                                        <li class="dropdown__content-item">
+                                            <a href="#" class="dropdown__content-link">Форменная</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> -->
+                        </li>
+                        <div class="menu__devider"></div>
+                        <li class="menu__item">Акции</li>
+                        <div class="menu__devider"></div>
+                        <li class="menu__item">Магазин</li>
+                        <div class="menu__devider"></div>
+                        <li class="menu__item">О компании</li>
+                        <div class="menu__devider"></div>
+                        <li class="menu__item">Контакты</li>
+                    </ul>  
+                </nav>     
+                <div class="order__btn btn" id="order__btn-1">
+                    <a href="#" class="btn__text-link order__btn-link">
+                        <p class="order-btn__text">Заказать on-line</p>
+                        <p class="order-btn__text">заберём за три часа</p>
+                    </a>    
+                    <img src="images/btn__icon.png" alt="" class="header__btn-img btn__img">
+                </div>  
+                <img src="images/header__basket.png" alt="basket" class="basket__img">
+            </div>
+            <nav class="header__menu" id="header__menu-2">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <div class="dropdown">
+                            <button class="dropdown__btn menu item">Услуги</button>
+                            <img src="images/list__img.svg" alt="arrow" class="dropdown__img">
+                        </div>
+                        <!-- <div id="myDropdown" class="dropdown__content">
+
+                            <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-1" checked>
+                            <label class="dropdown__content-label" for="dropdown__content-btn-1">
+                                Одежда
+                                <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                            </label>
+
+                            <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-2">
+                            <label class="dropdown__content-label" for="dropdown__content-btn-2">
+                                Аксессуары
+                                <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                            </label>
+
+                            <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-3">
+                            <label class="dropdown__content-label" for="dropdown__content-btn-3">
+                                Домашний интерьер
+                                <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                            </label>
+
+                            <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-4">
+                            <label class="dropdown__content-label" for="dropdown__content-btn-4">
+                                Обувь
+                                <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                            </label>
+
+                            <input class="dropdown__content-input" type="radio" id="dropdown__content-btn-5">
+                            <label class="dropdown__content-label" for="dropdown__content-btn-5">
+                                Особые услуги
+                                <img src="images/dropdown__content-arrow.png" alt="arrow" class="dropdown__content-img">
+                            </label>
+
+                            <div class="dropdown__content-box" id="content-1">
+                                <ul class="dropdown__content-list">
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Деловая</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Повседневная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Торжественная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Верхняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Детская</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Домашняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Спортивная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Форменная</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__content-box" id="content-2">
+                                <ul class="dropdown__content-list">
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Деловая</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Повседневная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Торжественная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Верхняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Детская</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Домашняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Спортивная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Форменная</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__content-box" id="content-3">
+                                <ul class="dropdown__content-list">
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Деловая</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Повседневная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Торжественная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Верхняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Детская</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Домашняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Спортивная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Форменная</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__content-box" id="content-4">
+                                <ul class="dropdown__content-list">
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Деловая</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Повседневная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Торжественная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Верхняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Детская</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Домашняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Спортивная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Форменная</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown__content-box" id="content-5">
+                                <ul class="dropdown__content-list">
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Деловая</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Повседневная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Торжественная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Верхняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Детская</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Домашняя</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Спортивная</a>
+                                    </li>
+                                    <li class="dropdown__content-item">
+                                        <a href="#" class="dropdown__content-link">Форменная</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </li>
+                    <div class="menu__devider"></div>
+                    <li class="menu__item">Акции</li>
+                    <div class="menu__devider"></div>
+                    <li class="menu__item">Магазин</li>
+                    <div class="menu__devider"></div>
+                    <li class="menu__item">О компании</li>
+                    <div class="menu__devider"></div>
+                    <li class="menu__item">Контакты</li>
+                </ul>  
+            </nav>
+            <div class="order__btn btn" id="order__btn-2">
+                    <a href="#" class="btn__text-link order__btn-link">
+                        <p class="order-btn__text">Заказать on-line</p>
+                        <p class="order-btn__text">заберём за три часа</p>
+                    </a>    
+                    <img src="images/btn__icon.png" alt="" class="header__btn-img btn__img">
+                </div>  
+            <div class="header__bottom">
+                <div class="header__wrapper">
+                    <div class="header__content">
+                        <h1 class="header__title">Срочная химчистка!<br>Заберем на 3 часа!</h1>
+                        <div class="header__slider">
+                            <div class="header__slider-item">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                            </div>
+                            <div class="header__slider-item">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                            </div>
+                            <div class="header__slider-item">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                            </div>
+                            <div class="header__slider-item">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                            </div>
+                            <div class="header__slider-item">
+                                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.
+                            </div>
+                        </div>
+                        <div class="courier-btn btn">
+                            <a href="#" class="btn__text-link">
+                                <p class="courier__btn-text">Вызвать курьера</p>
+                            </a>
+                            <img class="header__bottom-order-img btn__img" src="images/order__btn-img.png" alt="img">
+                        </div>
+                    </div>  
+                    <div class="header__img-box">  
+                        <img src="images/header__man.png" alt="man" class="header__img">
+                    </div>     
+                </div>    
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__content">
+                    <p class="advantages__mini-text">Наши преимущества</p>
+                    <h2 class="advantages__title title">Находим <span>решения</span> для любой задачи</h2>
+                    <p class="advantages__text">Компьютер стал неотъемлемой частью жизни человека. Это обязательный инструмент развития человека. Каждая большая и малая промышленность компьютеризирована. Компьютеры выполнять свою работу эффективно, быстро и продуктивно. Без сомнений, они сделали нашу жизнь намного легче.<br>
+                    Интересно, что первый компьютер был размером с микроавтобус и весил почти тонну. В то время как сейчас это может быть маленький чип размером с булавку. И компьютерные технологии не стоят на месте, она быстро прогрессируют.</p>
+                    <div class="advantages__box">
+                        <div class="advantages__content-img__box">   
+                            <img src="images/advantages__img-1.png" alt="img" class="advantages__content-img">
+                        </div> 
+                        <p class="advantages__box-text">Индивидуальное предложение учитывающее особенности Вашего бизнеса</p>
+                    </div>
+                    <div class="advantages__box">
+                        <div class="advantages__content-img__box">    
+                            <img src="images/advantages__img-2.svg" alt="img" class="advantages__content-img">
+                        </div>    
+                        <p class="advantages__box-text">Полный комплекс профессиональных услуг</p>
+                    </div>
+                    <div class="advantages__box">
+                        <div class="advantages__content-img__box">    
+                            <img src="images/advantages__img-3.png" alt="img" class="advantages__content-img">
+                        </div>    
+                        <p class="advantages__box-text">Собственная логистическая служба</p>
+                    </div>
+                    <div class="advantages__btn btn">
+                        <a href="#" class="btn__text-link">
+                            <p class="advantages__btn-text">Скачать прайс</p>
+                        </a>
+                        <img class="advantages__btn-img btn__img" src="images/advantages__btn.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefits">
+            <div class="container">
+                <div class="benefits__items">
+                    <div class="benefits__item-1">
+                        <img src="images/benefits__item-1.png" alt="benefits__img" class="benefits__item-img">
+                        <p class="benefits__item-text">Современные технологии</p>
+                    </div>
+                    <div class="benefits__item-2">
+                        <img src="images/benefits__item-2.png" alt="benefits__img" class="benefits__item-img">
+                        <p class="benefits__item-text">Безупречное качество</p>
+                    </div>
+                    <div class="benefits__item-3">
+                        <img src="images/benefits__item-3.png" alt="benefits__img" class="benefits__item-img">
+                        <p class="benefits__item-text">Нам доверяют</p>
+                    </div>
+                    <div class="benefits__item-4">
+                        <img src="images/benefits__item-4.png" alt="benefits__img" class="benefits__item-img">
+                        <p class="benefits__item-text">Срочные заказы</p>
+                    </div>
+                </div>
+                <h2 class="benefits__title title">
+                    <span class="benefits__title--professionalnoe" data-content="Профессиональное">
+                        Профессиональное
+                    </span> 
+                    <span class="benefits__title--obsluzhivanie" data-content="обслуживание">
+                        обслуживание
+                    </span> 
+                    <span class="benefits__title--vashego">Вашего</span> бизнеса</h2>
+            </div>
+        </section>
+        <section class="service">
+            <div class="container">
+                <div class="service__content">
+                    <p class="service__mini-text">Хит!</p>
+                    <h2 class="service__title title">Выездной <span>сервис</span></h2>
+                    <p class="service__text">Как оформить БЕСПЛАТНУЮ доставку? Сделайте заказ на сумму от 2000 руб и получите услугу курьера в подарок!*</p>
+                    <p class="service__text">Вызывайте курьера и совершайте заказы в любое удобное для Вас время</p>
+                    <div class="service__container">
+                        <div class="service__btn btn">
+                            <a href="#" class="btn__text-link">
+                                <p class="service__btn-text">Заказать доставку</p>
+                            </a>
+                            <img class="service__btn-img-1 btn__img" id="service__btn-img-1" src="images/order__btn-img.png" alt="img">
+                            <img class="service__btn-img-2 btn__img" id="service__btn-img-2" src="images/service__btn-img-320.png" alt="img">
+                        </div>
+                        <button class="service__form">Подробнее</button>
+                    </div>    
+                </div>    
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__title-box">
+                    <h2 class="contacts__title title">Наши <span>контакты</span></h2>
+                    <p class="contacts__title-text">Ценность яблок кроется в их составе. Почти 80% яблок составляет вода. Остальная часть приходится на клетчатку, органические кислоты, углеводы. Именно зеленое яблоко рекомендуют употреблять во время диет.</p>
+                </div>    
+                <div class="contacts__box">
+                    <div class="contacts__location-items">
+                        <div class="contacts__location-item">
+                            <p class="contacts__location-title">Сана Центральный офис</p>
+                            <div class="contacts__location-content">
+                                <p class="contacts__text">БЦ Купеческий Двор, Социалистическая ул., 74,  6 этаж, каб. 605А</p>
+                                <p class="contacts__number">8 (800) 123-00-01</p>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Пн-Вс</p>
+                                    <p class="contacts__time">круглосуточно</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__location-item">
+                            <p class="contacts__location-title">Сана Экспресс</p>
+                            <div class="contacts__location-content">
+                                <p class="contacts__text">ТЦ Золотой Вавилон, ул. Малиновского, 25, цокольноый этаж,<br> слева от главного входа.</p>
+                                <p class="contacts__number">8 (800) 123-00-02</p>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Пн-Вс</p>
+                                    <p class="contacts__time">с 9:00 - 21:00</p>
+                                </div>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Сб-Вс</p>
+                                    <p class="contacts__time">с 10:00 - 19:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__location-item">
+                            <p class="contacts__location-title">Пункт приема</p>
+                            <div class="contacts__location-content">
+                                <p class="contacts__text">Северный, просп. Космонавтов, 2/2, д 451</p>
+                                <p class="contacts__number">8 (800) 123-00-04</p>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Пн-Вс</p>
+                                    <p class="contacts__time">с 9:00 - 22:00</p>
+                                </div>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Сб-Вс</p>
+                                    <p class="contacts__time">выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__location-item">
+                            <p class="contacts__location-title">Пункт приема</p>
+                            <div class="contacts__location-content">
+                                <p class="contacts__text">Северный, просп. Космонавтов, 2/2, д 451</p>
+                                <p class="contacts__number">8 (800) 123-00-04</p>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Пн-Вс</p>
+                                    <p class="contacts__time">с 9:00 - 22:00</p>
+                                </div>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Сб-Вс</p>
+                                    <p class="contacts__time">выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__location-item">
+                            <p class="contacts__location-title">Пункт приема</p>
+                            <div class="contacts__location-content">
+                                <p class="contacts__text">Северный, просп. Космонавтов, 2/2, д 451</p>
+                                <p class="contacts__number">8 (800) 123-00-04</p>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Пн-Вс</p>
+                                    <p class="contacts__time">с 9:00 - 22:00</p>
+                                </div>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Сб-Вс</p>
+                                    <p class="contacts__time">выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__location-item">
+                            <p class="contacts__location-title">Пункт приема</p>
+                            <div class="contacts__location-content">
+                                <p class="contacts__text">Северный, просп. Космонавтов, 2/2, д 451</p>
+                                <p class="contacts__number">8 (800) 123-00-04</p>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Пн-Вс</p>
+                                    <p class="contacts__time">с 9:00 - 22:00</p>
+                                </div>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Сб-Вс</p>
+                                    <p class="contacts__time">выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__location-item">
+                            <p class="contacts__location-title">Пункт приема</p>
+                            <div class="contacts__location-content">
+                                <p class="contacts__text">Северный, просп. Космонавтов, 2/2, д 451</p>
+                                <p class="contacts__number">8 (800) 123-00-04</p>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Пн-Вс</p>
+                                    <p class="contacts__time">с 9:00 - 22:00</p>
+                                </div>
+                                <div class="contacts__time-box">
+                                    <p class="contacts__day">Сб-Вс</p>
+                                    <p class="contacts__time">выходной</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?ll=38.440571%2C55.462147&z=14" width="760" height="600" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+                <div class="contacts__btn">
+                    <a class="contacts__btn-link">Показать ещё</a>
+                    <img src="images/list__img.svg" alt="arrow" class="contacts__btn-img">
+                </div>
+            </div>    
+        </section>
+        <section class="booking">
+            <div class="container">
+                <form class="booking__form">
+                    <h2 class="booking__title">Закажите химчистку с доставкой!</h2>
+                    <div class="booking__box">
+                        <div class="input__box">
+                            <input type="text" class="booking__input" placeholder="Ваше имя фамилия*">
+                            <input type="text" class="booking__input" placeholder="Телефон*">
+                            <input type="text" class="booking__input" placeholder="E-mail">
+                        </div>
+                        <textarea class="booking__area" placeholder="Ваш комментарий"></textarea>
+                    </div>
+                    <div class="label__box">
+                        <label class="booking__label">
+                            <input type="checkbox" class="booking__checkbox">
+                            Срочно
+                        </label>     
+                        <label class="booking__label">
+                            <input type="checkbox" class="booking__checkbox">
+                            Не срочно
+                        </label>     
+                    </div>    
+                    <div class="booking__btn btn">
+                        <button class="booking__button">Заказать</button>
+                        <img class="booking__btn-img btn__img" src="images/order__btn-img.png" alt="img">
+                    </div>    
+                    <p class="booking__text">
+                        Нажимая на кнопку «Заказать», вы даёте своё согласие на обработку персональных данных согласно <a class="booking__link">политике конфиденциальности</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <a href="#" class="footer__logo logo">
+                    <img src="images/logo.svg" alt="logo" class="logo__img">
+                </a>
+                <nav class="footer__services" id="footer__services-1">
+                    <p class="footer__services-title">Услуги</p>
+                    <ul class="footer__services-list">
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Одежда</a>
+                        </li>
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Аксессуары</a>
+                        </li>
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Домашний интерьер</a>
+                        </li>
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Обувь</a>
+                        </li>
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Особые услуги</a>
+                        </li>
+                    </ul>
+                </nav>  
+                <nav class="footer__services" id="footer__services-2">
+                    <div class="dropdown">
+                        <button class="dropdown__btn footer__services-title" type="button">Услуги</button>
+                        <img src="images/list__img.svg" alt="arrow" class="dropdown__img">
+                    </div>
+                    <ul class="footer__services-list dropdown__content">
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Одежда</a>
+                        </li>
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Аксессуары</a>
+                        </li>
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Домашний интерьер</a>
+                        </li>
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Обувь</a>
+                        </li>
+                        <li class="footer__services-item">
+                            <a href="#" class="footer__services-link">Особые услуги</a>
+                        </li>
+                    </ul>
+                </nav>  
+                <nav class="footer__pages">
+                    <ul class="footer__pages-list">
+                        <li class="footer__pages-item">
+                            <a href="#" class="footer__pages-link">Акции</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#" class="footer__pages-link">Магазин</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#" class="footer__pages-link">О компании</a>
+                        </li>
+                        <li class="footer__pages-item">
+                            <a href="#" class="footer__pages-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__order">
+                    <div class="footer__phone-box">
+                        <a href="tel:+78001234567" class="footer__phone">8 (800) 123-45-67</a>
+                        <p class="footer__phone-text">Горячая линия</p>
+                    </div>    
+                    <div class="order__btn btn">
+                        <a href="#" class="btn__text-link order__btn-link">
+                            <p class="order-btn__text">Заказать on-line</p>
+                            <p class="order-btn__text">заберём за три часа</p>
+                        </a>    
+                        <img src="images/btn__icon.png" alt="" class="header__btn-img btn__img">
+                    </div>
+                </div>
+            </div>
+    </footer>   
+    <footer class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom-content">
+                <div class="footer__bottom-box">
+                    <p class="footer__bottom-text">2023 Химчистка Сана. Все права защищены.</p>
+                    <a class="footer__bottom-text">Политика обработки персональных данных</a>
+                </div>
+                <a class="footer__bottom-logo">
+                    <img src="images/footer__logo.svg" alt="logo" class="footer__logo-img">
+                </a>
+            </div>
+        </div> 
+    </footer>        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
